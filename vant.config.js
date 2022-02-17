@@ -1,15 +1,15 @@
 module.exports = {
-  name: '.',
+  name: 'fake_vant',
   build: {
     css: {
       preprocessor: 'sass',
     },
     site: {
-      publicPath: '/./',
+      publicPath: '/fake_vant/',
     },
   },
   site: {
-    title: '.',
+    title: 'fake_vant',
     logo: 'https://img.yzcdn.cn/vant/logo.png',
     nav: [
       {

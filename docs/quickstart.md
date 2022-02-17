@@ -4,11 +4,11 @@
 
 ```bash
 # 通过 npm
-npm i .
+npm i fake_vant
 
 # 通过 yarn
-yarn add .
+yarn add fake_vant
 
 # 通过 pnpm
-pnpm add .
+pnpm add fake_vant
 ```
