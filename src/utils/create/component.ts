@@ -25,8 +25,13 @@ function install(this: ComponentOptions<Vue>,Vue: VueConstructor){
     const {name} = this;
     Vue.component(name as string,this);
     Vue.component(camelize(`-${name}`), this)
+    console.log('camelize name:',camelize(`-${name}`));
+    
 }
 
+/**
+ * 統一 slot 格式
+ */
 export function unifySlots(context: RenderContext){
     const scopedSlots = context.scopedSlots || context.data.scopedSlots || {};
     const slots = context.slots();
@@ -39,6 +44,9 @@ export function unifySlots(context: RenderContext){
     return scopedSlots
 }
 
+/**
+ * 將 function component 轉為 component options
+ */
 function transformFunctionComponent(pure: FunctionComponent): VantComponentOptions{
     return {
         functional: true,
