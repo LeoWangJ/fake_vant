@@ -13,7 +13,7 @@ module.exports = {
     logo: 'https://img.yzcdn.cn/vant/logo.png',
     nav: [
       {
-        title: '开发指南',
+        title: '開發指南',
         items: [
           {
             path: 'home',
@@ -32,6 +32,15 @@ module.exports = {
             path: 'demo-button',
             title: 'DemoButton 按钮',
           },
+        ],
+      },
+      {
+        title: '源碼研究',
+        items: [
+          {
+            path: 'create',
+            title: '開發組件',
+          }
         ],
       },
     ],

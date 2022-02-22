@@ -9,6 +9,13 @@
 export type Mod = string | {[key: string]: any}
 export type Mods = Mod | Mod[]
 
+/**
+ * 用來處理修飾符( modifier )，且生成最終的 class name。
+ * 由於 modifier 還有分成 陣列與物件兩種格式參數, 所以必須處理。  
+ * 
+ * @param name 
+ * @param mods - 修飾符 modifier
+ */
 function generate (name: string,mods?: Mods): string{
     if(!mods){
         return ''

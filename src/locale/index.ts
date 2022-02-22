@@ -11,9 +11,9 @@ defineReactive(proto,'$fakeVantMessages',{
 })
 
 /**
- * function @message - 返回當前語言包訊息 
+ * function @message - 返回當前語言包物件 
  * function @use - 切換語言
- * function @add - 覆蓋語言包, 可以實現文案的修改和擴展
+ * function @add - 覆蓋語言包,可以實現文案的修改和擴展
  */
 export default{
     messages(){
