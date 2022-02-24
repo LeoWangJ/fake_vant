@@ -4,7 +4,7 @@
 ![createNameSpace](./image/createNameSpace.png)
 
 ## createComponent
-
+首先需要對[渲染函數](https://cn.vuejs.org/v2/guide/render-function.html)有深刻理解，閱讀該源碼才會比較有概念些
 ## createBEM
 由於組件庫的 class name 一般會加上組件庫名稱當前綴，方便辨識與避免與使用者重複命名，這樣導致 class name 通常會比一般項目來的長許多，所以 vant 使用該方法來輕鬆建立符合 BEM 的 class name 。    
 

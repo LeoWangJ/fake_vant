@@ -45,7 +45,7 @@ export function unifySlots(context: RenderContext){
 }
 
 /**
- * 將 function component 轉為 component options
+ * 將函式轉乘函數式組件
  */
 function transformFunctionComponent(pure: FunctionComponent): VantComponentOptions{
     return {
@@ -70,7 +70,9 @@ export function createComponent(name: string){
         if(isFunction(sfc)){
             sfc = transformFunctionComponent(sfc);
         }
-
+        
+        // https://cn.vuejs.org/v2/guide/render-function.html#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6
+        // 因為 functional this 無法正確獲取到 , 所以僅只做 Component options  
         if(!sfc.functional){
             sfc.mixins = sfc.mixins || [];
             sfc.mixins.push(SlotsMixin);
