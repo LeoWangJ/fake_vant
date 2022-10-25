@@ -1,0 +1,30 @@
+{
+  "name": "fake_vant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoWangJ/fake_vant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoWangJ/fake_vant/issues"
+  },
+  "homepage": "https://github.com/LeoWangJ/fake_vant#readme",
+  "nano-staged": {
+    "*.md": "prettier --write",
+    "*.{ts,tsx,js,vue,less}": "prettier --write",
+    "*.{ts,tsx,js,vue}": "eslint --fix"
+  },
+  "dependencies": {
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "nano-staged": "^0.8.0",
+    "prettier": "^2.7.1"
+  }
+}
