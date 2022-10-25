@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"pnpm --dir ./packages/vant dev",
+    "lint":"pnpm --dir ./packages/vant lint",
+    "test":"pnpm --dir ./packages/vant test",
+    "test:watch":"pnpm --dir ./packages/vant test:watch",
+    "build":"pnpm --dir ./packages/vant build"
   },
   "repository": {
     "type": "git",
