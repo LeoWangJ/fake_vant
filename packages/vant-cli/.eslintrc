@@ -2,6 +2,7 @@
   "root": true,
   "extends": ["@fake_vant"],
   "rules": {
-    "prefer-object-spread": "off"
+    "global-require": 0,
+    "import/no-dynamic-require": 0
   }
 }

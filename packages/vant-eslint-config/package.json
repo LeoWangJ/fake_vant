@@ -1,0 +1,24 @@
+{
+  "name": "@fake_vant/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.6.0"
+  },
+  "devDependencies": {
+    "enhanced-resolve": "^5.10.0",
+    "eslint": "^8.26.0",
+    "typescript": "^4.8.4"
+  }
+}
