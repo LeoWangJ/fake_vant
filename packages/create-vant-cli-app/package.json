@@ -1,0 +1,30 @@
+{
+  "name": "create-vant-cli-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "bin": {
+    "create-vant-cli-app": "./lib/index.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf ./lib && tsc",
+    "release": "pnpm build & release-it",
+    "prepare": "pnpm build"
+  },
+  "dependencies": {
+    "consola": "^2.11.3",
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.4",
+    "picocolors": "^1.0.0"
+  },
+  "release-it": {
+    "git": {
+      "tag": false,
+      "commitMessage": "release: create-vant-cli-app ${version}"
+    }
+  },
+  "author": "",
+  "license": "ISC"
+}
